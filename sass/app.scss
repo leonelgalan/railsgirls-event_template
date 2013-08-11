@@ -126,3 +126,141 @@ nav.main {
   }
 }
 
+// Hero
+header.hero {
+  @extend .row;
+
+  h2 {
+    color: $rails-girls-red;
+
+    small {
+      display: block;
+      clear: both;
+    }
+  }
+
+  div {
+    @extend .columns;
+  }
+
+  div:first-child {
+    @extend .large-7;
+    @extend .push-5;
+  }
+
+  section.social {
+    @extend .row;
+  }
+
+  div:last-child {
+    @extend .large-5;
+    @extend .pull-7;
+  }
+}
+
+// Action
+section.action {
+  @extend .row;
+
+  div {
+    @extend .large-4;
+    @extend .columns;
+
+    height: 4em;
+    padding-top: 1em;
+
+    em {
+      color: $rails-girls-red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
+
+// Information
+section.information {
+  @extend .row;
+
+  & > div {
+    @extend .columns;
+
+    section {
+      h3 {
+        color: $rails-girls-red;
+      }
+      strong {
+        color: $dark-rails-girls-red;
+      }
+    }
+  }
+
+  & > div:first-child {
+    @extend .large-7;
+  }
+
+  & > div:last-child {
+    @extend .large-5;
+  }
+}
+
+// Team
+section.team {  
+  @extend .row;
+
+  h3 {
+    font-weight: 200;
+    color: $dark-rails-girls-red;
+  }
+
+  min-height: 150px;
+
+  ul {
+    @extend .row;
+
+    li {
+      @extend .large-3;
+      @extend .small-6;
+      @extend .columns;
+
+      list-style: none;
+      float: left;
+      min-height: 4em;
+
+      img {
+        float: left;
+        width: 48px;
+        border: 1px solid #ddd;
+        margin-right: 15px;
+      }
+
+      small {
+        font-size: 0.9em;
+        display: block;
+        color: $dark-rails-girls-red;
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  p {
+    text-align: center;
+
+    em {
+      font-size: 1.5em;
+      letter-spacing: 0.5em;
+    }
+  }
+
+  color: $dark-gray-txt;
+  width: 100%;
+  padding: 40px 0;
+  background: $light-gray-bg;
+
+  a, a:hover {
+    color: darken($dark-gray-txt, 20%);
+    text-decoration: none;
+    border-color: darken($dark-gray-txt, 20%);
+  }
+}

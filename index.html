@@ -16,9 +16,19 @@
 
 </head>
 <body>
+  <!-- Facebook like plugin -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=575549279155545";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
-
-<a href="https://github.com/leonelgalan/railsgirls-event_template/tree/gh-pages"><img style="position: absolute; top: 0; left: 0; border: 0; z-index:9999" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+  <!-- Github ribbon begins, to make collaboration easier while the template is in devleopment -->
+  <a href="https://github.com/leonelgalan/railsgirls-event_template/tree/gh-pages"><img style="position: absolute; top: 0; left: 0; border: 0; z-index:9999" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+  <!-- Github ribbon ends -->
 
   <div class="red-background">
     <nav class="main" data-topbar>
@@ -44,85 +54,138 @@
   </div>
 
 
-	<div class="row">
-		<div class="large-12 columns">
-			<h2>Welcome to Foundation</h2>
-			<p>This is version 4.3.1.</p>
-			<hr />
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="large-8 columns">
-			<h3>The Grid</h3>
-
-			<!-- Grid Example -->
-			<div class="row">
-				<div class="large-12 columns">
-					<div class="panel">
-						<p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-6 columns">
-					<div class="panel">
-						<p>Six columns</p>
-					</div>
-				</div>
-				<div class="large-6 columns">
-					<div class="panel">
-						<p>Six columns</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-			</div>
-
-			<h3>Buttons</h3>
-
-      <div class="row">
-        <div class="large-6 columns">
-          <p><a href="#" class="small button">Small Button</a></p>
-          <p><a href="#" class="button">Medium Button</a></p>
-          <p><a href="#" class="large button">Large Button</a></p>
+  <header class="hero">
+    <div>
+      <h2>
+        Rails Girls Helsinki
+        <small>8-9th March 2013 - Finland</small>
+      </h2>
+      <p>Hello world!</p>
+      <p>Rails Girls comes to Helsinki! During the free two-day workshop we'll dive into the magical world of Ruby on Rails.</p>
+      <!-- Edit applications form URL, for example: https://docs.google.com/forms/d/[[FORM ID]]/viewform -->
+      <p>Apply now! <a href="[[FORM URL]]">Applications</a> are open until the March 1st.</p>
+      <section class="social">
+        <!-- More information: https://twitter.com/about/resources/buttons#tweet -->
+        <div>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="Rails Girls Helsinki 8-9th March 2013 - apply now! http://railsgirls.com/helsinki" data-via="railsgirls">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </div>
-        <div class="large-6 columns">
-          <p><a href="#" class="small alert button">Small Alert Button</a></p>
-          <p><a href="#" class="success button">Medium Success Button</a></p>
-          <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
+        <div>
+          <!-- More information: https://developers.facebook.com/docs/reference/plugins/like/ -->
+          <!-- Edit the data-href attribute with the event url, for example: http://railsgirls.com/helsinki -->
+          <div class="fb-like" data-href="http://leonelgalan.github.io/railsgirls-event_template/" data-width="300" data-show-faces="true" data-send="true"></div>
         </div>
       </div>
-		</div>
+    </div>
 
-		<div class="large-4 columns">
-			<h4>Getting Started</h4>
-			<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+    <div>
+      <img src="images/rg-helsinki.jpg" width="340px", height="340px" title="Rails Girls Image">
+    </div>
+  </header>
 
-			<h4>Other Resources</h4>
-			<p>Once you've exhausted the fun in this document, you should check out:</p>
-			<ul class="disc">
-				<li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-				<li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-				<li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
-			</ul>
-		</div>
-	</div>
+  <hr>
+
+  <section class="action">
+    <div>
+      <em>You learn</em> designing, prototyping and coding with the help from our coaches.
+    </div>
+    <div>
+      <em>You need</em> your own laptop, curiosity and a sprinkle of imagination!
+    </div>
+    <div>
+      <em>Want to help?</em> We are looking for volunteers and Rails coaches. <a href="mailto:contact@example.com">Email us</a>.
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="information">
+    <div>
+      <h3>Schedule</h3>
+    </div>
+    <div>
+      <section>
+        <h3>Information</h3>
+          <dl>
+            <dt>Applications close:</dt>
+            <dt>March 1st</dt>
+            <dt>Acceptances informed:</dt>
+            <dt>March 4th</dt>
+          </dl>
+          <dl>
+            <dt>Location:</dt>
+            <dd><a href="http://maps.google.fi/maps?q=Betonimiehenkuja+3,+02150+Espoo&amp;hl=fi&amp;sll=60.110164,25.01868&amp;sspn=0.383923,1.352692&amp;geocode=Fd9HlgMdPuZ6AQ&amp;hnear=Betonimiehenkuja+3,+Espoo&amp;t=m&amp;z=15">Startup Sauna</a></dd>
+            <dt></dt>
+            <dd>Betonimiehenkuja 3, 02150 Espoo</dd>
+          </dl>
+      </section>
+      <section>
+        <h3>Partners</h3>
+      </section>
+      <section>
+        <h3>FAQ</h3>
+          <p>
+            <strong>How much does the workshop cost?</strong>
+            Nothing, it's free! You just need to be excited!
+          </p>
+          <p>
+            <strong>Who is this aimed for?</strong>
+            Women of any age with basic knowledge of working with a computer. We’ve had people of all ages taking part. Most of the program is run in english and please bring your laptop.
+          </p>
+          <p>
+            <strong>Can men attend?</strong>
+            Yes, but you need to be accompanied by an interested lady. Also, girls are given a priority. 
+          </p>
+      </section>
+    </div>
+  </section>
+
+  <section class="team">
+    <h3>Helsinki coaches and team</h3>
+    <ul>
+      <!-- Edit name and title, for example: John Doe, organizer -->
+      <li>
+        <a href="https://twitter.com/#!/jukkajokelainen">
+          <img src="images/ruby-100.png">
+          Jukka Jokelainen, coach
+          <small>@jukkajokelainen</small>
+        </a>
+      </li>
+      <li>
+        <a href="https://ruokonen.wordpress.com/">
+          <img src="images/ruby-100.png">
+          Timo Ruokonen, coach
+          <small>@timoruokonen</small>
+        </a>
+      </li>
+      <li>
+        <a href="http://twitter.com/#!/nursahketene">
+          <img src="images/ruby-100.png">
+          Nur Sah Ketene, coach
+          <small>@nursahketene</small>
+        </a>
+      </li>
+      <li>
+        <a href="http://twitter.com/#!/ktiihonen">
+          <img src="images/ruby-100.png">
+          Kalle Tiihonen,<br> coach
+          <small>@ktiihonen</small>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/zorcam">
+          <img src="images/ruby-100.png">
+          Markku Rontu,<br> coach
+          <small>@zorcam</small>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>2010-2013, Rails Girls. <a href="./press.html">Contact us</a> or follow us on <a href="http://twitter.com/RailsGirls">Twitter</a> and <a href="https://www.facebook.com/railsgirls">Facebook</a></p>
+    <p><em>Get excited and make things!</em></p>
+  </footer>
 
   <script>
   document.write('<script src=' +
