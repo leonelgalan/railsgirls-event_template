@@ -143,16 +143,16 @@ header.hero {
     @extend .columns;
   }
 
-  div:first-child {
+  & > div:first-child {
     @extend .large-7;
     @extend .push-5;
+
+    section.social {
+      @extend .row;
+    }
   }
 
-  section.social {
-    @extend .row;
-  }
-
-  div:last-child {
+  & > div:last-child {
     @extend .large-5;
     @extend .pull-7;
   }
