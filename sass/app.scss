@@ -54,3 +54,59 @@
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+
+// List of components used so far: global, grid, type, top-bar
+
+.red-background {
+  background: $rails-girls-red;
+}
+
+nav.main {
+  @extend .row;
+  @extend .top-bar;
+
+  & > ul {
+    @extend .title-area;
+
+    li {
+      @extend .name;
+
+      h1 {
+        text-indent: -9999px;
+        overflow: hidden;
+        background-image: url(../images/railsgirls-logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 219px; // Image width
+      }
+    }
+  }
+
+  section {
+    @extend .top-bar-section;
+
+    ul {
+      @extend .right;
+
+      li {
+        @media #{$topbar-media-query} {
+          &:nth-child(even) {
+            height: $topbar-height;
+            width: 13px; // Image width
+            background-image: url(../images/star.png);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+
+        a {
+          font-weight: 300;
+          font-size: 20px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

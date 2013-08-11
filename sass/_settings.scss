@@ -67,6 +67,7 @@ $default-float: left;
 
 // Colors
 
+$rails-girls-red: #d3360b;
 // $primary-color: #2ba6cb;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
@@ -1234,11 +1235,11 @@ $default-float: left;
 
 // Background color for the top bar
 
-// $topbar-bg: #111;
+$topbar-bg: $rails-girls-red;
 
 // Height and margin
 
-// $topbar-height: 45px;
+$topbar-height: 120px;
 // $topbar-margin-bottom: emCalc(30);
 
 // Control Input height for top bar
@@ -1252,7 +1253,7 @@ $default-float: left;
 
 // Style the top bar dropdown elements
 
-// $topbar-dropdown-bg: #222;
+$topbar-dropdown-bg: $rails-girls-red;
 // $topbar-dropdown-link-color: #fff;
 // $topbar-dropdown-link-bg: lighten($topbar-bg, 5%);
 // $topbar-dropdown-toggle-size: 5px;
@@ -1283,7 +1284,7 @@ $default-float: left;
 // $topbar-menu-link-color: #fff;
 // $topbar-menu-icon-color: #fff;
 // $topbar-menu-link-color-toggled: #888;
-// $topbar-menu-icon-color-toggled: #888;
+$topbar-menu-icon-color-toggled: darken($rails-girls-red, 20%);
 
 // Transitions and breakpoint styles
 
@@ -1295,6 +1296,8 @@ $default-float: left;
 
 // $topbar-divider-border-bottom: solid 1px lighten($topbar-bg, 10%);
 // $topbar-divider-border-top: solid 1px darken($topbar-bg, 10%);
+// $topbar-divider-border-bottom: none;
+// $topbar-divider-border-top: none;
 
 // Sticky Class
 
