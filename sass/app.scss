@@ -139,7 +139,7 @@ header.hero {
     }
   }
 
-  div {
+  & > div {
     @extend .columns;
   }
 
@@ -149,6 +149,21 @@ header.hero {
 
     section.social {
       @extend .row;
+
+      & > div {
+        @extend .columns;
+
+        min-height: 60px;
+
+        &.twitter {
+          @extend .large-3;
+        }
+
+        &.facebook {
+          @extend .large-9;
+        }
+      }
+      
     }
   }
 
