@@ -57,8 +57,9 @@
 
 // List of components used so far: global, grid, type, top-bar
 
-a {
+a, a:hover {
   color: $rails-girls-red;
+  border-bottom: 1px dotted $rails-girls-red;;
 }
 
 // Main navigation
@@ -69,6 +70,10 @@ a {
 nav.main {
   @extend .row;
   @extend .top-bar;
+
+  a, a:hover {
+    border: none;
+  }
 
   & > ul {
     @extend .title-area;
@@ -87,7 +92,7 @@ nav.main {
     }
   }
 
-  section {
+  & > section {
     @extend .top-bar-section;
 
     ul {
@@ -107,6 +112,11 @@ nav.main {
         a {
           font-weight: bold;
           font-size: 20px;
+
+          &:not(.button) {
+            padding: 0 20px;
+          }
+
           &:hover {
             text-decoration: underline;
           }
