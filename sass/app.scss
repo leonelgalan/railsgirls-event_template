@@ -119,7 +119,7 @@ nav.main {
 
         a {
           font-weight: bold;
-          font-size: 20px;
+          font-size: emCalc(20);
 
           &:not(.button) {
             padding: 0 20px;
@@ -138,15 +138,6 @@ nav.main {
 header.hero {
   @extend .row;
 
-  h2 {
-    color: $rails-girls-red;
-
-    small {
-      display: block;
-      clear: both;
-    }
-  }
-
   & > div {
     @extend .columns;
   }
@@ -154,6 +145,23 @@ header.hero {
   & > div:first-child {
     @extend .large-7;
     @extend .push-5;
+
+    h2 {
+      color: $rails-girls-red;
+      font-size: emCalc(52);
+
+      small {
+        font-size: 0.5em;
+        font-weight: normal;
+        color: #444;
+        display: block;
+        clear: both;
+      }
+    }
+
+    p {
+      font-size: emCalc(19);
+    }
 
     section.social {
       @extend .row;
