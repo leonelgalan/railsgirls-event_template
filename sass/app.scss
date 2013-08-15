@@ -181,6 +181,13 @@ header.hero {
   }
 }
 
+@import "compass";
+#gradient {
+  @extend .row;
+  @include background-image(linear-gradient(#e8e8e8, white)); 
+  height: 25px;
+}
+
 // Action
 section.action {
   @extend .row;
