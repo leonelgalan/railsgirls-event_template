@@ -185,7 +185,7 @@ header.hero {
 section.action {
   @extend .row;
 
-  div {
+  & > p {
     @extend .large-4;
     @extend .columns;
 
