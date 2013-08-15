@@ -156,6 +156,7 @@ header.hero {
         color: #444;
         display: block;
         clear: both;
+        margin-top: 0.5em;
       }
     }
 
@@ -179,7 +180,7 @@ header.hero {
           @extend .large-9;
         }
       }
-      
+
     }
   }
 
@@ -260,7 +261,7 @@ section.information {
 }
 
 // Team
-section.team {  
+section.team {
   @extend .row;
 
   min-height: 150px;
