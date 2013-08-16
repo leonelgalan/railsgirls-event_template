@@ -424,7 +424,7 @@ table {
 /* line 269, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
 html,
 body {
-  font-size: 100%;
+  font-size: 16px;
 }
 
 /* line 272, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
@@ -539,7 +539,7 @@ select {
 
 /* Grid HTML Classes */
 /* line 116, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-.row, nav.main, header.hero, header.hero > div:first-child section.social, section.action, section.information, section.information > div.schedule > section > div, section.team, section.team ul {
+.row, nav.main, header.hero, header.hero > div:first-child section.social, body > hr:first-of-type, section.action, section.information, section.information > div.schedule > section > div, section.team, section.team ul {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -549,20 +549,21 @@ select {
   *zoom: 1;
 }
 /* line 121, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
-.row:before, nav.main:before, header.hero:before, header.hero > div:first-child section.social:before, section.action:before, section.information:before, section.information > div.schedule > section > div:before, section.team:before, section.team ul:before, .row:after, nav.main:after, header.hero:after, header.hero > div:first-child section.social:after, section.action:after, section.information:after, section.information > div.schedule > section > div:after, section.team:after, section.team ul:after {
+.row:before, nav.main:before, header.hero:before, header.hero > div:first-child section.social:before, body > hr:first-of-type:before, section.action:before, section.information:before, section.information > div.schedule > section > div:before, section.team:before, section.team ul:before, .row:after, nav.main:after, header.hero:after, header.hero > div:first-child section.social:after, body > hr:first-of-type:after, section.action:after, section.information:after, section.information > div.schedule > section > div:after, section.team:after, section.team ul:after {
   content: " ";
   display: table;
 }
 /* line 122, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
-.row:after, nav.main:after, header.hero:after, header.hero > div:first-child section.social:after, section.action:after, section.information:after, section.information > div.schedule > section > div:after, section.team:after, section.team ul:after {
+.row:after, nav.main:after, header.hero:after, header.hero > div:first-child section.social:after, body > hr:first-of-type:after, section.action:after, section.information:after, section.information > div.schedule > section > div:after, section.team:after, section.team ul:after {
   clear: both;
 }
 /* line 121, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-.row.collapse .column, nav.collapse.main .column, header.collapse.hero .column, header.hero > div:first-child section.collapse.social .column, section.collapse.action .column, section.collapse.information .column, section.information > div.schedule > section > div.collapse .column, section.collapse.team .column, section.team ul.collapse .column,
+.row.collapse .column, nav.collapse.main .column, header.collapse.hero .column, header.hero > div:first-child section.collapse.social .column, body > hr.collapse:first-of-type .column, section.collapse.action .column, section.collapse.information .column, section.information > div.schedule > section > div.collapse .column, section.collapse.team .column, section.team ul.collapse .column,
 .row.collapse .columns,
 nav.collapse.main .columns,
 header.collapse.hero .columns,
 header.hero > div:first-child section.collapse.social .columns,
+body > hr.collapse:first-of-type .columns,
 section.collapse.action .columns,
 section.collapse.information .columns,
 section.information > div.schedule > section > div.collapse .columns,
@@ -572,6 +573,8 @@ section.team ul.collapse .columns,
 nav.collapse.main header.hero > div,
 header.collapse.hero header.hero > div,
 header.hero > div:first-child section.collapse.social header.hero > div,
+body > hr.collapse:first-of-type header.hero > div,
+section.collapse.action header.hero > div,
 section.collapse.information header.hero > div,
 section.information > div.schedule > section > div.collapse header.hero > div,
 section.collapse.team header.hero > div,
@@ -581,31 +584,28 @@ header.hero > div:first-child .row.collapse section.social > div,
 header.hero > div:first-child nav.collapse.main section.social > div,
 header.hero > div:first-child header.collapse.hero section.social > div,
 header.hero > div:first-child section.collapse.social section.social > div,
+header.hero > div:first-child body > hr.collapse:first-of-type section.social > div,
+header.hero > div:first-child section.collapse.action section.social > div,
 header.hero > div:first-child section.collapse.information section.social > div,
 header.hero > div:first-child section.information > div.schedule > section > div.collapse section.social > div,
 header.hero > div:first-child section.collapse.team section.social > div,
 header.hero > div:first-child section.team ul.collapse section.social > div,
-.row.collapse section.action div,
-section.action .row.collapse div,
-nav.collapse.main section.action div,
-section.action nav.collapse.main div,
-header.collapse.hero section.action div,
-section.action header.collapse.hero div,
-header.hero > div:first-child section.collapse.social section.action div,
-section.action header.hero > div:first-child section.collapse.social div,
-section.collapse.action div,
-section.collapse.information section.action div,
-section.action section.collapse.information div,
-section.information > div.schedule > section > div.collapse section.action div,
-section.action section.information > div.schedule > section > div.collapse div,
-section.collapse.team section.action div,
-section.action section.collapse.team div,
-section.team ul.collapse section.action div,
-section.action section.team ul.collapse div,
+.row.collapse section.action > p,
+nav.collapse.main section.action > p,
+header.collapse.hero section.action > p,
+header.hero > div:first-child section.collapse.social section.action > p,
+body > hr.collapse:first-of-type section.action > p,
+section.collapse.action section.action > p,
+section.collapse.information section.action > p,
+section.information > div.schedule > section > div.collapse section.action > p,
+section.collapse.team section.action > p,
+section.team ul.collapse section.action > p,
 .row.collapse section.information > div,
 nav.collapse.main section.information > div,
 header.collapse.hero section.information > div,
 header.hero > div:first-child section.collapse.social section.information > div,
+body > hr.collapse:first-of-type section.information > div,
+section.collapse.action section.information > div,
 section.collapse.information section.information > div,
 section.information > div.schedule > section > div.collapse section.information > div,
 section.collapse.team section.information > div,
@@ -620,6 +620,8 @@ header.collapse.hero section.team ul li,
 section.team ul header.collapse.hero li,
 header.hero > div:first-child section.collapse.social section.team ul li,
 section.team ul header.hero > div:first-child section.collapse.social li,
+body > hr.collapse:first-of-type section.team ul li,
+section.team ul body > hr.collapse:first-of-type li,
 section.collapse.action section.team ul li,
 section.team ul section.collapse.action li,
 section.collapse.information section.team ul li,
@@ -634,7 +636,7 @@ section.team ul.collapse li {
   float: left;
 }
 /* line 124, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-.row .row, nav.main .row, header.hero .row, header.hero > div:first-child section.social .row, section.action .row, section.information .row, section.information > div.schedule > section > div .row, section.team .row, .row nav.main, nav.main nav.main, header.hero nav.main, section.action nav.main, section.information nav.main, section.team nav.main, .row header.hero, nav.main header.hero, header.hero header.hero, section.action header.hero, section.information header.hero, section.team header.hero, header.hero > div:first-child section.social, .row section.action, nav.main section.action, header.hero section.action, section.action section.action, section.information section.action, section.team section.action, .row section.information, nav.main section.information, header.hero section.information, section.action section.information, section.information section.information, section.team section.information, section.information > div.schedule > section > div, .row section.team, nav.main section.team, header.hero section.team, section.action section.team, section.information section.team, section.team section.team, section.team ul {
+.row .row, nav.main .row, header.hero .row, header.hero > div:first-child section.social .row, body > hr:first-of-type .row, section.action .row, section.information .row, section.information > div.schedule > section > div .row, section.team .row, .row nav.main, nav.main nav.main, header.hero nav.main, body > hr:first-of-type nav.main, section.action nav.main, section.information nav.main, section.team nav.main, .row header.hero, nav.main header.hero, header.hero header.hero, body > hr:first-of-type header.hero, section.action header.hero, section.information header.hero, section.team header.hero, header.hero > div:first-child section.social, .row body > hr:first-of-type, nav.main body > hr:first-of-type, header.hero body > hr:first-of-type, body > hr:first-of-type body > hr:first-of-type, section.action body > hr:first-of-type, section.information body > hr:first-of-type, section.team body > hr:first-of-type, .row section.action, nav.main section.action, header.hero section.action, body > hr:first-of-type section.action, section.action section.action, section.information section.action, section.team section.action, .row section.information, nav.main section.information, header.hero section.information, body > hr:first-of-type section.information, section.action section.information, section.information section.information, section.team section.information, section.information > div.schedule > section > div, .row section.team, nav.main section.team, header.hero section.team, body > hr:first-of-type section.team, section.action section.team, section.information section.team, section.team section.team, section.team ul {
   width: auto;
   margin-left: -0.9375em;
   margin-right: -0.9375em;
@@ -644,28 +646,28 @@ section.team ul.collapse li {
   *zoom: 1;
 }
 /* line 121, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
-.row .row:before, nav.main .row:before, header.hero .row:before, header.hero > div:first-child section.social .row:before, section.action .row:before, section.information .row:before, section.team .row:before, .row nav.main:before, nav.main nav.main:before, header.hero nav.main:before, section.action nav.main:before, section.information nav.main:before, section.team nav.main:before, .row header.hero:before, nav.main header.hero:before, header.hero header.hero:before, section.action header.hero:before, section.information header.hero:before, section.team header.hero:before, header.hero > div:first-child section.social:before, .row section.action:before, nav.main section.action:before, header.hero section.action:before, section.action section.action:before, section.information section.action:before, section.team section.action:before, .row section.information:before, nav.main section.information:before, header.hero section.information:before, section.action section.information:before, section.information section.information:before, section.team section.information:before, section.information > div.schedule > section > div:before, .row section.team:before, nav.main section.team:before, header.hero section.team:before, section.action section.team:before, section.information section.team:before, section.team section.team:before, section.team ul:before, .row .row:after, nav.main .row:after, header.hero .row:after, header.hero > div:first-child section.social .row:after, section.action .row:after, section.information .row:after, section.team .row:after, .row nav.main:after, nav.main nav.main:after, header.hero nav.main:after, section.action nav.main:after, section.information nav.main:after, section.team nav.main:after, .row header.hero:after, nav.main header.hero:after, header.hero header.hero:after, section.action header.hero:after, section.information header.hero:after, section.team header.hero:after, header.hero > div:first-child section.social:after, .row section.action:after, nav.main section.action:after, header.hero section.action:after, section.action section.action:after, section.information section.action:after, section.team section.action:after, .row section.information:after, nav.main section.information:after, header.hero section.information:after, section.action section.information:after, section.information section.information:after, section.team section.information:after, section.information > div.schedule > section > div:after, .row section.team:after, nav.main section.team:after, header.hero section.team:after, section.action section.team:after, section.information section.team:after, section.team section.team:after, section.team ul:after {
+.row .row:before, nav.main .row:before, header.hero .row:before, header.hero > div:first-child section.social .row:before, body > hr:first-of-type .row:before, section.action .row:before, section.information .row:before, section.team .row:before, .row nav.main:before, nav.main nav.main:before, header.hero nav.main:before, body > hr:first-of-type nav.main:before, section.action nav.main:before, section.information nav.main:before, section.team nav.main:before, .row header.hero:before, nav.main header.hero:before, header.hero header.hero:before, body > hr:first-of-type header.hero:before, section.action header.hero:before, section.information header.hero:before, section.team header.hero:before, header.hero > div:first-child section.social:before, .row body > hr:first-of-type:before, nav.main body > hr:first-of-type:before, header.hero body > hr:first-of-type:before, body > hr:first-of-type body > hr:first-of-type:before, section.action body > hr:first-of-type:before, section.information body > hr:first-of-type:before, section.team body > hr:first-of-type:before, .row section.action:before, nav.main section.action:before, header.hero section.action:before, body > hr:first-of-type section.action:before, section.action section.action:before, section.information section.action:before, section.team section.action:before, .row section.information:before, nav.main section.information:before, header.hero section.information:before, body > hr:first-of-type section.information:before, section.action section.information:before, section.information section.information:before, section.team section.information:before, section.information > div.schedule > section > div:before, .row section.team:before, nav.main section.team:before, header.hero section.team:before, body > hr:first-of-type section.team:before, section.action section.team:before, section.information section.team:before, section.team section.team:before, section.team ul:before, .row .row:after, nav.main .row:after, header.hero .row:after, header.hero > div:first-child section.social .row:after, body > hr:first-of-type .row:after, section.action .row:after, section.information .row:after, section.team .row:after, .row nav.main:after, nav.main nav.main:after, header.hero nav.main:after, body > hr:first-of-type nav.main:after, section.action nav.main:after, section.information nav.main:after, section.team nav.main:after, .row header.hero:after, nav.main header.hero:after, header.hero header.hero:after, body > hr:first-of-type header.hero:after, section.action header.hero:after, section.information header.hero:after, section.team header.hero:after, header.hero > div:first-child section.social:after, .row body > hr:first-of-type:after, nav.main body > hr:first-of-type:after, header.hero body > hr:first-of-type:after, body > hr:first-of-type body > hr:first-of-type:after, section.action body > hr:first-of-type:after, section.information body > hr:first-of-type:after, section.team body > hr:first-of-type:after, .row section.action:after, nav.main section.action:after, header.hero section.action:after, body > hr:first-of-type section.action:after, section.action section.action:after, section.information section.action:after, section.team section.action:after, .row section.information:after, nav.main section.information:after, header.hero section.information:after, body > hr:first-of-type section.information:after, section.action section.information:after, section.information section.information:after, section.team section.information:after, section.information > div.schedule > section > div:after, .row section.team:after, nav.main section.team:after, header.hero section.team:after, body > hr:first-of-type section.team:after, section.action section.team:after, section.information section.team:after, section.team section.team:after, section.team ul:after {
   content: " ";
   display: table;
 }
 /* line 122, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
-.row .row:after, nav.main .row:after, header.hero .row:after, header.hero > div:first-child section.social .row:after, section.action .row:after, section.information .row:after, section.team .row:after, .row nav.main:after, nav.main nav.main:after, header.hero nav.main:after, section.action nav.main:after, section.information nav.main:after, section.team nav.main:after, .row header.hero:after, nav.main header.hero:after, header.hero header.hero:after, section.action header.hero:after, section.information header.hero:after, section.team header.hero:after, header.hero > div:first-child section.social:after, .row section.action:after, nav.main section.action:after, header.hero section.action:after, section.action section.action:after, section.information section.action:after, section.team section.action:after, .row section.information:after, nav.main section.information:after, header.hero section.information:after, section.action section.information:after, section.information section.information:after, section.team section.information:after, section.information > div.schedule > section > div:after, .row section.team:after, nav.main section.team:after, header.hero section.team:after, section.action section.team:after, section.information section.team:after, section.team section.team:after, section.team ul:after {
+.row .row:after, nav.main .row:after, header.hero .row:after, header.hero > div:first-child section.social .row:after, body > hr:first-of-type .row:after, section.action .row:after, section.information .row:after, section.team .row:after, .row nav.main:after, nav.main nav.main:after, header.hero nav.main:after, body > hr:first-of-type nav.main:after, section.action nav.main:after, section.information nav.main:after, section.team nav.main:after, .row header.hero:after, nav.main header.hero:after, header.hero header.hero:after, body > hr:first-of-type header.hero:after, section.action header.hero:after, section.information header.hero:after, section.team header.hero:after, header.hero > div:first-child section.social:after, .row body > hr:first-of-type:after, nav.main body > hr:first-of-type:after, header.hero body > hr:first-of-type:after, body > hr:first-of-type body > hr:first-of-type:after, section.action body > hr:first-of-type:after, section.information body > hr:first-of-type:after, section.team body > hr:first-of-type:after, .row section.action:after, nav.main section.action:after, header.hero section.action:after, body > hr:first-of-type section.action:after, section.action section.action:after, section.information section.action:after, section.team section.action:after, .row section.information:after, nav.main section.information:after, header.hero section.information:after, body > hr:first-of-type section.information:after, section.action section.information:after, section.information section.information:after, section.team section.information:after, section.information > div.schedule > section > div:after, .row section.team:after, nav.main section.team:after, header.hero section.team:after, body > hr:first-of-type section.team:after, section.action section.team:after, section.information section.team:after, section.team section.team:after, section.team ul:after {
   clear: both;
 }
 /* line 125, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-.row .row.collapse, nav.main .row.collapse, header.hero .row.collapse, header.hero > div:first-child section.social .row.collapse, section.action .row.collapse, section.information .row.collapse, section.team .row.collapse, .row nav.collapse.main, nav.main nav.collapse.main, header.hero nav.collapse.main, section.action nav.collapse.main, section.information nav.collapse.main, section.team nav.collapse.main, .row header.collapse.hero, nav.main header.collapse.hero, header.hero header.collapse.hero, section.action header.collapse.hero, section.information header.collapse.hero, section.team header.collapse.hero, header.hero > div:first-child section.collapse.social, .row section.collapse.action, nav.main section.collapse.action, header.hero section.collapse.action, section.action section.collapse.action, section.information section.collapse.action, section.team section.collapse.action, .row section.collapse.information, nav.main section.collapse.information, header.hero section.collapse.information, section.action section.collapse.information, section.information section.collapse.information, section.team section.collapse.information, section.information > div.schedule > section > div.collapse, .row section.collapse.team, nav.main section.collapse.team, header.hero section.collapse.team, section.action section.collapse.team, section.information section.collapse.team, section.team section.collapse.team, section.team ul.collapse {
+.row .row.collapse, nav.main .row.collapse, header.hero .row.collapse, header.hero > div:first-child section.social .row.collapse, body > hr:first-of-type .row.collapse, section.action .row.collapse, section.information .row.collapse, section.team .row.collapse, .row nav.collapse.main, nav.main nav.collapse.main, header.hero nav.collapse.main, body > hr:first-of-type nav.collapse.main, section.action nav.collapse.main, section.information nav.collapse.main, section.team nav.collapse.main, .row header.collapse.hero, nav.main header.collapse.hero, header.hero header.collapse.hero, body > hr:first-of-type header.collapse.hero, section.action header.collapse.hero, section.information header.collapse.hero, section.team header.collapse.hero, header.hero > div:first-child section.collapse.social, .row body > hr.collapse:first-of-type, nav.main body > hr.collapse:first-of-type, header.hero body > hr.collapse:first-of-type, body > hr:first-of-type body > hr.collapse:first-of-type, section.action body > hr.collapse:first-of-type, section.information body > hr.collapse:first-of-type, section.team body > hr.collapse:first-of-type, .row section.collapse.action, nav.main section.collapse.action, header.hero section.collapse.action, body > hr:first-of-type section.collapse.action, section.action section.collapse.action, section.information section.collapse.action, section.team section.collapse.action, .row section.collapse.information, nav.main section.collapse.information, header.hero section.collapse.information, body > hr:first-of-type section.collapse.information, section.action section.collapse.information, section.information section.collapse.information, section.team section.collapse.information, section.information > div.schedule > section > div.collapse, .row section.collapse.team, nav.main section.collapse.team, header.hero section.collapse.team, body > hr:first-of-type section.collapse.team, section.action section.collapse.team, section.information section.collapse.team, section.team section.collapse.team, section.team ul.collapse {
   width: auto;
   margin: 0;
   max-width: none;
   *zoom: 1;
 }
 /* line 121, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
-.row .row.collapse:before, nav.main .row.collapse:before, header.hero .row.collapse:before, section.action .row.collapse:before, section.information .row.collapse:before, section.team .row.collapse:before, .row nav.collapse.main:before, nav.main nav.collapse.main:before, header.hero nav.collapse.main:before, section.action nav.collapse.main:before, section.information nav.collapse.main:before, section.team nav.collapse.main:before, .row header.collapse.hero:before, nav.main header.collapse.hero:before, header.hero header.collapse.hero:before, section.action header.collapse.hero:before, section.information header.collapse.hero:before, section.team header.collapse.hero:before, header.hero > div:first-child section.collapse.social:before, .row section.collapse.action:before, nav.main section.collapse.action:before, header.hero section.collapse.action:before, section.action section.collapse.action:before, section.information section.collapse.action:before, section.team section.collapse.action:before, .row section.collapse.information:before, nav.main section.collapse.information:before, header.hero section.collapse.information:before, section.action section.collapse.information:before, section.information section.collapse.information:before, section.team section.collapse.information:before, section.information > div.schedule > section > div.collapse:before, .row section.collapse.team:before, nav.main section.collapse.team:before, header.hero section.collapse.team:before, section.action section.collapse.team:before, section.information section.collapse.team:before, section.team section.collapse.team:before, section.team ul.collapse:before, .row .row.collapse:after, nav.main .row.collapse:after, header.hero .row.collapse:after, section.action .row.collapse:after, section.information .row.collapse:after, section.team .row.collapse:after, .row nav.collapse.main:after, nav.main nav.collapse.main:after, header.hero nav.collapse.main:after, section.action nav.collapse.main:after, section.information nav.collapse.main:after, section.team nav.collapse.main:after, .row header.collapse.hero:after, nav.main header.collapse.hero:after, header.hero header.collapse.hero:after, section.action header.collapse.hero:after, section.information header.collapse.hero:after, section.team header.collapse.hero:after, header.hero > div:first-child section.collapse.social:after, .row section.collapse.action:after, nav.main section.collapse.action:after, header.hero section.collapse.action:after, section.action section.collapse.action:after, section.information section.collapse.action:after, section.team section.collapse.action:after, .row section.collapse.information:after, nav.main section.collapse.information:after, header.hero section.collapse.information:after, section.action section.collapse.information:after, section.information section.collapse.information:after, section.team section.collapse.information:after, section.information > div.schedule > section > div.collapse:after, .row section.collapse.team:after, nav.main section.collapse.team:after, header.hero section.collapse.team:after, section.action section.collapse.team:after, section.information section.collapse.team:after, section.team section.collapse.team:after, section.team ul.collapse:after {
+.row .row.collapse:before, nav.main .row.collapse:before, header.hero .row.collapse:before, body > hr:first-of-type .row.collapse:before, section.action .row.collapse:before, section.information .row.collapse:before, section.team .row.collapse:before, .row nav.collapse.main:before, nav.main nav.collapse.main:before, header.hero nav.collapse.main:before, body > hr:first-of-type nav.collapse.main:before, section.action nav.collapse.main:before, section.information nav.collapse.main:before, section.team nav.collapse.main:before, .row header.collapse.hero:before, nav.main header.collapse.hero:before, header.hero header.collapse.hero:before, body > hr:first-of-type header.collapse.hero:before, section.action header.collapse.hero:before, section.information header.collapse.hero:before, section.team header.collapse.hero:before, header.hero > div:first-child section.collapse.social:before, .row body > hr.collapse:first-of-type:before, nav.main body > hr.collapse:first-of-type:before, header.hero body > hr.collapse:first-of-type:before, body > hr:first-of-type body > hr.collapse:first-of-type:before, section.action body > hr.collapse:first-of-type:before, section.information body > hr.collapse:first-of-type:before, section.team body > hr.collapse:first-of-type:before, .row section.collapse.action:before, nav.main section.collapse.action:before, header.hero section.collapse.action:before, body > hr:first-of-type section.collapse.action:before, section.action section.collapse.action:before, section.information section.collapse.action:before, section.team section.collapse.action:before, .row section.collapse.information:before, nav.main section.collapse.information:before, header.hero section.collapse.information:before, body > hr:first-of-type section.collapse.information:before, section.action section.collapse.information:before, section.information section.collapse.information:before, section.team section.collapse.information:before, section.information > div.schedule > section > div.collapse:before, .row section.collapse.team:before, nav.main section.collapse.team:before, header.hero section.collapse.team:before, body > hr:first-of-type section.collapse.team:before, section.action section.collapse.team:before, section.information section.collapse.team:before, section.team section.collapse.team:before, section.team ul.collapse:before, .row .row.collapse:after, nav.main .row.collapse:after, header.hero .row.collapse:after, body > hr:first-of-type .row.collapse:after, section.action .row.collapse:after, section.information .row.collapse:after, section.team .row.collapse:after, .row nav.collapse.main:after, nav.main nav.collapse.main:after, header.hero nav.collapse.main:after, body > hr:first-of-type nav.collapse.main:after, section.action nav.collapse.main:after, section.information nav.collapse.main:after, section.team nav.collapse.main:after, .row header.collapse.hero:after, nav.main header.collapse.hero:after, header.hero header.collapse.hero:after, body > hr:first-of-type header.collapse.hero:after, section.action header.collapse.hero:after, section.information header.collapse.hero:after, section.team header.collapse.hero:after, header.hero > div:first-child section.collapse.social:after, .row body > hr.collapse:first-of-type:after, nav.main body > hr.collapse:first-of-type:after, header.hero body > hr.collapse:first-of-type:after, body > hr:first-of-type body > hr.collapse:first-of-type:after, section.action body > hr.collapse:first-of-type:after, section.information body > hr.collapse:first-of-type:after, section.team body > hr.collapse:first-of-type:after, .row section.collapse.action:after, nav.main section.collapse.action:after, header.hero section.collapse.action:after, body > hr:first-of-type section.collapse.action:after, section.action section.collapse.action:after, section.information section.collapse.action:after, section.team section.collapse.action:after, .row section.collapse.information:after, nav.main section.collapse.information:after, header.hero section.collapse.information:after, body > hr:first-of-type section.collapse.information:after, section.action section.collapse.information:after, section.information section.collapse.information:after, section.team section.collapse.information:after, section.information > div.schedule > section > div.collapse:after, .row section.collapse.team:after, nav.main section.collapse.team:after, header.hero section.collapse.team:after, body > hr:first-of-type section.collapse.team:after, section.action section.collapse.team:after, section.information section.collapse.team:after, section.team section.collapse.team:after, section.team ul.collapse:after {
   content: " ";
   display: table;
 }
 /* line 122, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
-.row .row.collapse:after, nav.main .row.collapse:after, header.hero .row.collapse:after, section.action .row.collapse:after, section.information .row.collapse:after, section.team .row.collapse:after, .row nav.collapse.main:after, nav.main nav.collapse.main:after, header.hero nav.collapse.main:after, section.action nav.collapse.main:after, section.information nav.collapse.main:after, section.team nav.collapse.main:after, .row header.collapse.hero:after, nav.main header.collapse.hero:after, header.hero header.collapse.hero:after, section.action header.collapse.hero:after, section.information header.collapse.hero:after, section.team header.collapse.hero:after, header.hero > div:first-child section.collapse.social:after, .row section.collapse.action:after, nav.main section.collapse.action:after, header.hero section.collapse.action:after, section.action section.collapse.action:after, section.information section.collapse.action:after, section.team section.collapse.action:after, .row section.collapse.information:after, nav.main section.collapse.information:after, header.hero section.collapse.information:after, section.action section.collapse.information:after, section.information section.collapse.information:after, section.team section.collapse.information:after, section.information > div.schedule > section > div.collapse:after, .row section.collapse.team:after, nav.main section.collapse.team:after, header.hero section.collapse.team:after, section.action section.collapse.team:after, section.information section.collapse.team:after, section.team section.collapse.team:after, section.team ul.collapse:after {
+.row .row.collapse:after, nav.main .row.collapse:after, header.hero .row.collapse:after, body > hr:first-of-type .row.collapse:after, section.action .row.collapse:after, section.information .row.collapse:after, section.team .row.collapse:after, .row nav.collapse.main:after, nav.main nav.collapse.main:after, header.hero nav.collapse.main:after, body > hr:first-of-type nav.collapse.main:after, section.action nav.collapse.main:after, section.information nav.collapse.main:after, section.team nav.collapse.main:after, .row header.collapse.hero:after, nav.main header.collapse.hero:after, header.hero header.collapse.hero:after, body > hr:first-of-type header.collapse.hero:after, section.action header.collapse.hero:after, section.information header.collapse.hero:after, section.team header.collapse.hero:after, header.hero > div:first-child section.collapse.social:after, .row body > hr.collapse:first-of-type:after, nav.main body > hr.collapse:first-of-type:after, header.hero body > hr.collapse:first-of-type:after, body > hr:first-of-type body > hr.collapse:first-of-type:after, section.action body > hr.collapse:first-of-type:after, section.information body > hr.collapse:first-of-type:after, section.team body > hr.collapse:first-of-type:after, .row section.collapse.action:after, nav.main section.collapse.action:after, header.hero section.collapse.action:after, body > hr:first-of-type section.collapse.action:after, section.action section.collapse.action:after, section.information section.collapse.action:after, section.team section.collapse.action:after, .row section.collapse.information:after, nav.main section.collapse.information:after, header.hero section.collapse.information:after, body > hr:first-of-type section.collapse.information:after, section.action section.collapse.information:after, section.information section.collapse.information:after, section.team section.collapse.information:after, section.information > div.schedule > section > div.collapse:after, .row section.collapse.team:after, nav.main section.collapse.team:after, header.hero section.collapse.team:after, body > hr:first-of-type section.collapse.team:after, section.action section.collapse.team:after, section.information section.collapse.team:after, section.team section.collapse.team:after, section.team ul.collapse:after {
   clear: both;
 }
 
@@ -674,7 +676,7 @@ section.team ul.collapse li {
 .columns,
 header.hero > div,
 header.hero > div:first-child section.social > div,
-section.action div,
+section.action > p,
 section.information > div,
 section.information > div.schedule > section > div > div:first-child,
 section.information > div.schedule > section > div > div:last-child,
@@ -692,7 +694,7 @@ section.team ul li {
   .columns,
   header.hero > div,
   header.hero > div:first-child section.social > div,
-  section.action div,
+  section.action > p,
   section.information > div,
   section.information > div.schedule > section > div > div:first-child,
   section.information > div.schedule > section > div > div:last-child,
@@ -856,7 +858,7 @@ section.team ul li {
   .columns.small-centered,
   header.hero > div.small-centered,
   header.hero > div:first-child section.social > div.small-centered,
-  section.action div.small-centered,
+  section.action > p.small-centered,
   section.information > div.small-centered,
   section.information > div.schedule > section > div > div.small-centered:first-child,
   section.information > div.schedule > section > div > div.small-centered:last-child,
@@ -888,7 +890,7 @@ section.team ul li {
   }
 
   /* line 156, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-  .large-4, section.action div {
+  .large-4, section.action > p {
     position: relative;
     width: 33.33333%;
   }
@@ -942,73 +944,73 @@ section.team ul li {
   }
 
   /* line 160, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-  .row .large-offset-0, nav.main .large-offset-0, header.hero .large-offset-0, header.hero > div:first-child section.social .large-offset-0, section.action .large-offset-0, section.information .large-offset-0, section.information > div.schedule > section > div .large-offset-0, section.team .large-offset-0 {
+  .row .large-offset-0, nav.main .large-offset-0, header.hero .large-offset-0, header.hero > div:first-child section.social .large-offset-0, body > hr:first-of-type .large-offset-0, section.action .large-offset-0, section.information .large-offset-0, section.information > div.schedule > section > div .large-offset-0, section.team .large-offset-0 {
     position: relative;
     margin-left: 0%;
   }
 
   /* line 160, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-  .row .large-offset-1, nav.main .large-offset-1, header.hero .large-offset-1, header.hero > div:first-child section.social .large-offset-1, section.action .large-offset-1, section.information .large-offset-1, section.information > div.schedule > section > div .large-offset-1, section.team .large-offset-1 {
+  .row .large-offset-1, nav.main .large-offset-1, header.hero .large-offset-1, header.hero > div:first-child section.social .large-offset-1, body > hr:first-of-type .large-offset-1, section.action .large-offset-1, section.information .large-offset-1, section.information > div.schedule > section > div .large-offset-1, section.team .large-offset-1 {
     position: relative;
     margin-left: 8.33333%;
   }
 
   /* line 160, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-  .row .large-offset-2, nav.main .large-offset-2, header.hero .large-offset-2, header.hero > div:first-child section.social .large-offset-2, section.action .large-offset-2, section.information .large-offset-2, section.information > div.schedule > section > div .large-offset-2, section.team .large-offset-2 {
+  .row .large-offset-2, nav.main .large-offset-2, header.hero .large-offset-2, header.hero > div:first-child section.social .large-offset-2, body > hr:first-of-type .large-offset-2, section.action .large-offset-2, section.information .large-offset-2, section.information > div.schedule > section > div .large-offset-2, section.team .large-offset-2 {
     position: relative;
     margin-left: 16.66667%;
   }
 
   /* line 160, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-  .row .large-offset-3, nav.main .large-offset-3, header.hero .large-offset-3, header.hero > div:first-child section.social .large-offset-3, section.action .large-offset-3, section.information .large-offset-3, section.information > div.schedule > section > div .large-offset-3, section.team .large-offset-3 {
+  .row .large-offset-3, nav.main .large-offset-3, header.hero .large-offset-3, header.hero > div:first-child section.social .large-offset-3, body > hr:first-of-type .large-offset-3, section.action .large-offset-3, section.information .large-offset-3, section.information > div.schedule > section > div .large-offset-3, section.team .large-offset-3 {
     position: relative;
     margin-left: 25%;
   }
 
   /* line 160, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-  .row .large-offset-4, nav.main .large-offset-4, header.hero .large-offset-4, header.hero > div:first-child section.social .large-offset-4, section.action .large-offset-4, section.information .large-offset-4, section.information > div.schedule > section > div .large-offset-4, section.team .large-offset-4 {
+  .row .large-offset-4, nav.main .large-offset-4, header.hero .large-offset-4, header.hero > div:first-child section.social .large-offset-4, body > hr:first-of-type .large-offset-4, section.action .large-offset-4, section.information .large-offset-4, section.information > div.schedule > section > div .large-offset-4, section.team .large-offset-4 {
     position: relative;
     margin-left: 33.33333%;
   }
 
   /* line 160, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-  .row .large-offset-5, nav.main .large-offset-5, header.hero .large-offset-5, header.hero > div:first-child section.social .large-offset-5, section.action .large-offset-5, section.information .large-offset-5, section.information > div.schedule > section > div .large-offset-5, section.team .large-offset-5 {
+  .row .large-offset-5, nav.main .large-offset-5, header.hero .large-offset-5, header.hero > div:first-child section.social .large-offset-5, body > hr:first-of-type .large-offset-5, section.action .large-offset-5, section.information .large-offset-5, section.information > div.schedule > section > div .large-offset-5, section.team .large-offset-5 {
     position: relative;
     margin-left: 41.66667%;
   }
 
   /* line 160, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-  .row .large-offset-6, nav.main .large-offset-6, header.hero .large-offset-6, header.hero > div:first-child section.social .large-offset-6, section.action .large-offset-6, section.information .large-offset-6, section.information > div.schedule > section > div .large-offset-6, section.team .large-offset-6 {
+  .row .large-offset-6, nav.main .large-offset-6, header.hero .large-offset-6, header.hero > div:first-child section.social .large-offset-6, body > hr:first-of-type .large-offset-6, section.action .large-offset-6, section.information .large-offset-6, section.information > div.schedule > section > div .large-offset-6, section.team .large-offset-6 {
     position: relative;
     margin-left: 50%;
   }
 
   /* line 160, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-  .row .large-offset-7, nav.main .large-offset-7, header.hero .large-offset-7, header.hero > div:first-child section.social .large-offset-7, section.action .large-offset-7, section.information .large-offset-7, section.information > div.schedule > section > div .large-offset-7, section.team .large-offset-7 {
+  .row .large-offset-7, nav.main .large-offset-7, header.hero .large-offset-7, header.hero > div:first-child section.social .large-offset-7, body > hr:first-of-type .large-offset-7, section.action .large-offset-7, section.information .large-offset-7, section.information > div.schedule > section > div .large-offset-7, section.team .large-offset-7 {
     position: relative;
     margin-left: 58.33333%;
   }
 
   /* line 160, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-  .row .large-offset-8, nav.main .large-offset-8, header.hero .large-offset-8, header.hero > div:first-child section.social .large-offset-8, section.action .large-offset-8, section.information .large-offset-8, section.information > div.schedule > section > div .large-offset-8, section.team .large-offset-8 {
+  .row .large-offset-8, nav.main .large-offset-8, header.hero .large-offset-8, header.hero > div:first-child section.social .large-offset-8, body > hr:first-of-type .large-offset-8, section.action .large-offset-8, section.information .large-offset-8, section.information > div.schedule > section > div .large-offset-8, section.team .large-offset-8 {
     position: relative;
     margin-left: 66.66667%;
   }
 
   /* line 160, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-  .row .large-offset-9, nav.main .large-offset-9, header.hero .large-offset-9, header.hero > div:first-child section.social .large-offset-9, section.action .large-offset-9, section.information .large-offset-9, section.information > div.schedule > section > div .large-offset-9, section.team .large-offset-9 {
+  .row .large-offset-9, nav.main .large-offset-9, header.hero .large-offset-9, header.hero > div:first-child section.social .large-offset-9, body > hr:first-of-type .large-offset-9, section.action .large-offset-9, section.information .large-offset-9, section.information > div.schedule > section > div .large-offset-9, section.team .large-offset-9 {
     position: relative;
     margin-left: 75%;
   }
 
   /* line 160, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-  .row .large-offset-10, nav.main .large-offset-10, header.hero .large-offset-10, header.hero > div:first-child section.social .large-offset-10, section.action .large-offset-10, section.information .large-offset-10, section.information > div.schedule > section > div .large-offset-10, section.team .large-offset-10 {
+  .row .large-offset-10, nav.main .large-offset-10, header.hero .large-offset-10, header.hero > div:first-child section.social .large-offset-10, body > hr:first-of-type .large-offset-10, section.action .large-offset-10, section.information .large-offset-10, section.information > div.schedule > section > div .large-offset-10, section.team .large-offset-10 {
     position: relative;
     margin-left: 83.33333%;
   }
 
   /* line 160, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_grid.scss */
-  .row .large-offset-11, nav.main .large-offset-11, header.hero .large-offset-11, header.hero > div:first-child section.social .large-offset-11, section.action .large-offset-11, section.information .large-offset-11, section.information > div.schedule > section > div .large-offset-11, section.team .large-offset-11 {
+  .row .large-offset-11, nav.main .large-offset-11, header.hero .large-offset-11, header.hero > div:first-child section.social .large-offset-11, body > hr:first-of-type .large-offset-11, section.action .large-offset-11, section.information .large-offset-11, section.information > div.schedule > section > div .large-offset-11, section.team .large-offset-11 {
     position: relative;
     margin-left: 91.66667%;
   }
@@ -1172,7 +1174,7 @@ section.team ul li {
   .columns.large-centered,
   header.hero > div.large-centered,
   header.hero > div:first-child section.social > div.large-centered,
-  section.action div.large-centered,
+  section.action > p.large-centered,
   section.information > div.large-centered,
   section.information > div.schedule > section > div > div.large-centered:first-child,
   section.information > div.schedule > section > div > div.large-centered:last-child,
@@ -1188,7 +1190,7 @@ section.team ul li {
   .columns.large-uncentered,
   header.hero > div.large-uncentered,
   header.hero > div:first-child section.social > div.large-uncentered,
-  section.action div.large-uncentered,
+  section.action > p.large-uncentered,
   section.information > div.large-uncentered,
   section.information > div.schedule > section > div > div.large-uncentered:first-child,
   section.information > div.schedule > section > div > div.large-uncentered:last-child,
@@ -1203,7 +1205,7 @@ section.team ul li {
   .columns.large-uncentered.opposite,
   header.hero > div.large-uncentered.opposite,
   header.hero > div:first-child section.social > div.large-uncentered.opposite,
-  section.action div.large-uncentered.opposite,
+  section.action > p.large-uncentered.opposite,
   section.information > div.large-uncentered.opposite,
   section.information > div.schedule > section > div > div.large-uncentered.opposite:first-child,
   section.information > div.schedule > section > div > div.large-uncentered.opposite:last-child,
@@ -1682,7 +1684,7 @@ blockquote p {
   list-style: none;
 }
 /* line 97, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_top-bar.scss */
-.top-bar .row, nav.main .row, .top-bar nav.main, nav.main nav.main, .top-bar header.hero, nav.main header.hero, .top-bar header.hero > div:first-child section.social, header.hero > div:first-child .top-bar section.social, nav.main header.hero > div:first-child section.social, header.hero > div:first-child nav.main section.social, .top-bar section.action, nav.main section.action, .top-bar section.information, nav.main section.information, .top-bar section.information > div.schedule > section > div, nav.main section.information > div.schedule > section > div, .top-bar section.team, nav.main section.team, .top-bar section.team ul, section.team .top-bar ul, nav.main section.team ul, section.team nav.main ul {
+.top-bar .row, nav.main .row, .top-bar nav.main, nav.main nav.main, .top-bar header.hero, nav.main header.hero, .top-bar header.hero > div:first-child section.social, header.hero > div:first-child .top-bar section.social, nav.main header.hero > div:first-child section.social, header.hero > div:first-child nav.main section.social, .top-bar body > hr:first-of-type, nav.main body > hr:first-of-type, .top-bar section.action, nav.main section.action, .top-bar section.information, nav.main section.information, .top-bar section.information > div.schedule > section > div, nav.main section.information > div.schedule > section > div, .top-bar section.team, nav.main section.team, .top-bar section.team ul, section.team .top-bar ul, nav.main section.team ul, section.team nav.main ul {
   max-width: none;
 }
 /* line 100, ../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.3.1/scss/foundation/components/_top-bar.scss */
@@ -2138,35 +2140,35 @@ nav.main > section [role="separator"] {
     visibility: visible;
   }
 }
-/* line 57, ../sass/app.scss */
+/* line 60, ../sass/app.scss */
 a, a:hover {
   color: #d3360b;
   border-bottom: 1px dotted #d3360b;
 }
 
-/* line 62, ../sass/app.scss */
+/* line 65, ../sass/app.scss */
 h3 {
   font-weight: 200;
   color: #380e03;
 }
 
-/* line 67, ../sass/app.scss */
+/* line 70, ../sass/app.scss */
 h4 {
   font-weight: 200;
   color: #d3360b;
   font-size: 1.2em;
 }
 
-/* line 74, ../sass/app.scss */
+/* line 77, ../sass/app.scss */
 .red-background {
   background: #d3360b;
 }
 
-/* line 82, ../sass/app.scss */
+/* line 85, ../sass/app.scss */
 nav.main a, nav.main a:hover {
   border: none;
 }
-/* line 92, ../sass/app.scss */
+/* line 95, ../sass/app.scss */
 nav.main > ul li h1 {
   text-indent: -9999px;
   overflow: hidden;
@@ -2176,7 +2178,7 @@ nav.main > ul li h1 {
   width: 219px;
 }
 @media only screen and (min-width: 58.75em) {
-  /* line 111, ../sass/app.scss */
+  /* line 114, ../sass/app.scss */
   nav.main > section ul li:nth-child(even) {
     height: 120px;
     width: 13px;
@@ -2185,100 +2187,119 @@ nav.main > ul li h1 {
     background-position: center;
   }
 }
-/* line 120, ../sass/app.scss */
+/* line 123, ../sass/app.scss */
 nav.main > section ul li a {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25em;
 }
-/* line 124, ../sass/app.scss */
+/* line 127, ../sass/app.scss */
 nav.main > section ul li a:not(.button) {
   padding: 0 20px;
 }
-/* line 128, ../sass/app.scss */
+/* line 131, ../sass/app.scss */
 nav.main > section ul li a:hover {
   text-decoration: underline;
 }
 
-/* line 141, ../sass/app.scss */
-header.hero h2 {
+/* line 152, ../sass/app.scss */
+header.hero > div:first-child h2 {
   color: #d3360b;
+  font-size: 3.25em;
 }
-/* line 144, ../sass/app.scss */
-header.hero h2 small {
+/* line 156, ../sass/app.scss */
+header.hero > div:first-child h2 small {
+  font-size: 0.5em;
+  font-weight: normal;
+  color: #444;
   display: block;
   clear: both;
+  margin-top: 0.5em;
 }
-/* line 161, ../sass/app.scss */
+/* line 166, ../sass/app.scss */
+header.hero > div:first-child p {
+  font-size: 1.1875em;
+}
+/* line 173, ../sass/app.scss */
 header.hero > div:first-child section.social > div {
   min-height: 60px;
 }
 
-/* line 188, ../sass/app.scss */
-section.action div {
+/* line 196, ../sass/app.scss */
+body > hr:first-of-type {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e8e8e8), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#e8e8e8, #ffffff);
+  background-image: -moz-linear-gradient(#e8e8e8, #ffffff);
+  background-image: -o-linear-gradient(#e8e8e8, #ffffff);
+  background-image: linear-gradient(#e8e8e8, #ffffff);
+  height: 25px;
+}
+
+/* line 207, ../sass/app.scss */
+section.action > p {
   height: 4em;
   padding-top: 1em;
 }
-/* line 195, ../sass/app.scss */
-section.action div em {
+/* line 214, ../sass/app.scss */
+section.action > p em {
   color: #d3360b;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 211, ../sass/app.scss */
+/* line 230, ../sass/app.scss */
 section.information > div section h3 {
   color: #d3360b;
 }
-/* line 214, ../sass/app.scss */
+/* line 233, ../sass/app.scss */
 section.information > div section strong {
   color: #380e03;
 }
-/* line 227, ../sass/app.scss */
+/* line 246, ../sass/app.scss */
 section.information > div.schedule > section > div > div:first-child {
   text-align: center;
 }
 
-/* line 248, ../sass/app.scss */
+/* line 267, ../sass/app.scss */
 section.team {
   min-height: 150px;
 }
-/* line 256, ../sass/app.scss */
+/* line 275, ../sass/app.scss */
 section.team ul li {
   list-style: none;
   float: left;
   min-height: 4em;
 }
-/* line 265, ../sass/app.scss */
+/* line 284, ../sass/app.scss */
 section.team ul li img {
   float: left;
   width: 48px;
   border: 1px solid #ddd;
   margin-right: 15px;
 }
-/* line 272, ../sass/app.scss */
+/* line 291, ../sass/app.scss */
 section.team ul li small {
   font-size: 0.9em;
   display: block;
   color: #380e03;
 }
 
-/* line 282, ../sass/app.scss */
+/* line 301, ../sass/app.scss */
 footer {
   color: #666666;
   width: 100%;
   padding: 40px 0;
   background: #f4f4f4;
 }
-/* line 283, ../sass/app.scss */
+/* line 302, ../sass/app.scss */
 footer p {
   text-align: center;
 }
-/* line 286, ../sass/app.scss */
+/* line 305, ../sass/app.scss */
 footer p em {
   font-size: 1.5em;
   letter-spacing: 0.5em;
 }
-/* line 297, ../sass/app.scss */
+/* line 316, ../sass/app.scss */
 footer a, footer a:hover {
   color: #333333;
   text-decoration: none;
