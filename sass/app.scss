@@ -1,3 +1,6 @@
+// Compass
+@import "compass";
+
 // Global Foundation Settings
 @import "settings";
 
@@ -190,10 +193,10 @@ header.hero {
   }
 }
 
-@import "compass";
-#gradient {
+body > hr:first-of-type {
   @extend .row;
   @include background-image(linear-gradient(#e8e8e8, white)); 
+
   height: 25px;
 }
 
