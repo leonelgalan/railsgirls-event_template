@@ -223,7 +223,7 @@ section.action {
 section.information {
   @extend .row;
 
-  & > div {
+  & > div, & > section {
     @extend .columns;
 
     section {
@@ -236,21 +236,21 @@ section.information {
     }
   }
 
-  & > div.schedule {
+  & > section.schedule {
     @extend .large-7;
 
-      & > section {
-        & > div {
+      & > section.day {
+        & > div.activity {
           @extend .row;
 
-          & > div:first-child {
+          & > div.time {
             @extend .columns;
             @extend .large-3;
 
             text-align: center;
           }
 
-          & > div:last-child {
+          & > div.content {
             @extend .columns;
             @extend .large-9;
           }
