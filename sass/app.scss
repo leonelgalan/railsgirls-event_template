@@ -110,26 +110,29 @@ nav.main {
       @extend .right;
 
       li {
-        @media #{$topbar-media-query} {
-          &:nth-child(even) {
-            height: $topbar-height;
-            width: 13px; // Image width
-            background-image: url(../images/star.png);
-            background-repeat: no-repeat;
-            background-position: center;
-          }
-        }
-
         a {
           font-weight: bold;
           font-size: emCalc(20);
 
           &:not(.button) {
-            padding: 0 20px;
+            @media #{$topbar-media-query} {
+              background-image: url(../images/star.png);
+              background-repeat: no-repeat;
+              background-position: left center;
+              padding: 0 14px 0 26px;
+            }
           }
 
           &:hover {
             text-decoration: underline;
+          }
+        }
+      }
+
+      li:first-child {
+        a:not(.button) {
+          @media #{$topbar-media-query} {
+            background: none;
           }
         }
       }

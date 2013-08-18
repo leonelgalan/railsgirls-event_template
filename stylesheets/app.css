@@ -2193,36 +2193,37 @@ nav.main > ul li h1 {
   background-position: center;
   width: 219px;
 }
-@media only screen and (min-width: 58.75em) {
-  /* line 114, ../sass/app.scss */
-  nav.main > section ul li:nth-child(even) {
-    height: 120px;
-    width: 13px;
-    background-image: url(../images/star.png);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-/* line 123, ../sass/app.scss */
+/* line 113, ../sass/app.scss */
 nav.main > section ul li a {
   font-weight: bold;
   font-size: 1.25em;
 }
-/* line 127, ../sass/app.scss */
-nav.main > section ul li a:not(.button) {
-  padding: 0 20px;
+@media only screen and (min-width: 58.75em) {
+  /* line 117, ../sass/app.scss */
+  nav.main > section ul li a:not(.button) {
+    background-image: url(../images/star.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 0 14px 0 26px;
+  }
 }
-/* line 131, ../sass/app.scss */
+/* line 126, ../sass/app.scss */
 nav.main > section ul li a:hover {
   text-decoration: underline;
 }
+@media only screen and (min-width: 58.75em) {
+  /* line 133, ../sass/app.scss */
+  nav.main > section ul li:first-child a:not(.button) {
+    background: none;
+  }
+}
 
-/* line 152, ../sass/app.scss */
+/* line 155, ../sass/app.scss */
 header.hero > div:first-child h2 {
   color: #d3360b;
   font-size: 3.25em;
 }
-/* line 156, ../sass/app.scss */
+/* line 159, ../sass/app.scss */
 header.hero > div:first-child h2 small {
   font-size: 0.5em;
   font-weight: normal;
@@ -2231,16 +2232,16 @@ header.hero > div:first-child h2 small {
   clear: both;
   margin-top: 0.5em;
 }
-/* line 166, ../sass/app.scss */
+/* line 169, ../sass/app.scss */
 header.hero > div:first-child p {
   font-size: 1.1875em;
 }
-/* line 173, ../sass/app.scss */
+/* line 176, ../sass/app.scss */
 header.hero > div:first-child section.social > div {
   min-height: 60px;
 }
 
-/* line 196, ../sass/app.scss */
+/* line 199, ../sass/app.scss */
 body > hr:first-of-type {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e8e8e8), color-stop(100%, #ffffff));
   background-image: -webkit-linear-gradient(#e8e8e8, #ffffff);
@@ -2250,72 +2251,72 @@ body > hr:first-of-type {
   height: 25px;
 }
 
-/* line 207, ../sass/app.scss */
+/* line 210, ../sass/app.scss */
 section.action > p {
   height: 4em;
   padding-top: 1em;
 }
-/* line 214, ../sass/app.scss */
+/* line 217, ../sass/app.scss */
 section.action > p em {
   color: #d3360b;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 230, ../sass/app.scss */
+/* line 233, ../sass/app.scss */
 section.information > div section h3, section.information > section section h3 {
   color: #d3360b;
 }
-/* line 233, ../sass/app.scss */
+/* line 236, ../sass/app.scss */
 section.information > div section strong, section.information > section section strong {
   color: #380e03;
 }
-/* line 246, ../sass/app.scss */
+/* line 249, ../sass/app.scss */
 section.information > section.schedule > section.day > div.activity > div.time {
   text-align: center;
 }
 
-/* line 267, ../sass/app.scss */
+/* line 270, ../sass/app.scss */
 section.team {
   min-height: 150px;
 }
-/* line 275, ../sass/app.scss */
+/* line 278, ../sass/app.scss */
 section.team ul li {
   list-style: none;
   float: left;
   min-height: 4em;
 }
-/* line 284, ../sass/app.scss */
+/* line 287, ../sass/app.scss */
 section.team ul li img {
   float: left;
   width: 48px;
   border: 1px solid #ddd;
   margin-right: 15px;
 }
-/* line 291, ../sass/app.scss */
+/* line 294, ../sass/app.scss */
 section.team ul li small {
   font-size: 0.9em;
   display: block;
   color: #380e03;
 }
 
-/* line 301, ../sass/app.scss */
+/* line 304, ../sass/app.scss */
 footer {
   color: #666666;
   width: 100%;
   padding: 40px 0;
   background: #f4f4f4;
 }
-/* line 302, ../sass/app.scss */
+/* line 305, ../sass/app.scss */
 footer p {
   text-align: center;
 }
-/* line 305, ../sass/app.scss */
+/* line 308, ../sass/app.scss */
 footer p em {
   font-size: 1.5em;
   letter-spacing: 0.5em;
 }
-/* line 316, ../sass/app.scss */
+/* line 319, ../sass/app.scss */
 footer a, footer a:hover {
   color: #333333;
   text-decoration: none;
